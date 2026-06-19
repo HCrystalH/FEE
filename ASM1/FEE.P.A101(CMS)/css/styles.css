@@ -1,0 +1,63 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.auth-page .card-header {
+    font-size: 18px;
+
+}
+
+.auth-page .btn-success {
+    width: 100%;
+    font-weight: bold;
+}
+
+.sidebar {
+    background: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    min-height: calc(100vh - 56px);
+    padding: 15px;
+}
+
+.content-wrapper {
+    padding: 25px;
+}
+
+.card-header {
+    background-color: #e9ecef;
+}
+
+.sidebar .list-group-item {
+    color: #007bff;
+}
+
+
+.login-card {
+    width: 380px;
+}
+
+.register-card {
+    width: 340px;
+}
+
+.btn-success {
+    font-weight: bold;
+}
+
+.register-link {
+    display: block;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+::placeholder {
+    color: lightgray !important;
+}

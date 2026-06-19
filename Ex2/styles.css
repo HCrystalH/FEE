@@ -1,0 +1,31 @@
+
+.container-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-body{
+    display: flex;
+    gap: 20px;  /*Space between each column*/
+}
+
+.column{
+    flex: 1;
+    min-height:500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.column:nth-child(1) {
+    background: #eaf4ff;
+}
+
+.column:nth-child(2) {
+    background: #fdf1dd;
+}
+
+.column:nth-child(3) {
+    background: #eef9ea;
+}

@@ -1,0 +1,55 @@
+<div class="modal fade" id="loginModal" tableindex="-1">
+        <div class="modal-dialog">
+            <div class ="modal-content">
+
+                <div class ="modal-header">
+                    <h2 class="modal-title"> Sign In </h2>
+
+                    <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                </div>
+
+                <div class ="modal-body">
+                    <!-- Valiadtion message -->
+                    <div id ="loginError" class="alert alert-danger d-none"></div>
+
+                    <form id="loginForm">
+                        <div class ="form-group">
+                            <label for="alias"> Alias <span class="text-danger"> :</span> </label>
+                            
+                            <input 
+                                type ="text"
+                                class ="form-control"
+                                id="alias"
+                                required>
+                
+                        </div>
+
+                        <div class =form-group>
+                            <label for="password"> Password <span class="text-danger">*</span></label>
+
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="password"
+                                required>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="remember">
+
+                            <label
+                                class="form-check-label"
+                                for="remember">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-success"> Sign In </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

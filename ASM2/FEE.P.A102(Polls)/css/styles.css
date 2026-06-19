@@ -1,0 +1,163 @@
+body{
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+
+/* dashboard */
+.dashboard{
+    background: #222;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard a{
+    color: white;
+    margin-right: 20px;
+    /* text-decoration: none; */
+}
+
+.login-btn {
+    margin-left: auto;
+}
+
+.text-danger {
+    color: red;
+}
+
+/* Main content */
+.container-body{
+    width: 85%;
+    margin: 25px auto;
+}
+
+.container-body h1{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* 
+    Form in create.html 
+*/
+.interviewForm {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+#interview input[type="text"]{
+    width: 320px;
+    height: 32px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+#interview input::placeholder{
+    color: #999;
+}
+
+#interview input[type="radio"] {
+    margin-right: 8px;
+}
+
+#interview label {
+    margin-bottom: 20px;
+}
+
+/* Answer  */
+.answer-row{
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 20px;
+}
+
+.answer-input-group{
+    display:flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-right: none; 
+    border-radius: 3px 0 0 3px;
+
+}
+
+#answerContainer{
+    display: inline-block;
+}
+#answerContainer input{
+    margin-bottom: 10px;
+}
+
+/* Answer button */
+.answer-row .answer-input {
+    margin-bottom: 0 !important;
+    border-radius: 3px 0 0 3px;
+}
+
+.add-answer-btn {
+    width: 40px;
+    height: 32px;
+    border-radius: 0 3px 3px 0;
+    margin-left: -1px; /* removes double border */
+}
+
+/* Add question button */
+.add-question-btn {
+    background: #5cb85c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-question-btn:hover {
+    background: #4cae4c;
+}
+
+/* Retain  button*/
+.retain-btn{
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor:pointer;
+}
+
+/* ======================= */
+.table td,
+.table th{
+    vertical-align: middle;
+}
+
+
+/* For notification */
+#notificationArea {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.app-notification {
+    padding: 12px 15px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.app-success {
+    background: #28a745;
+}
+
+.app-danger {
+    background: #dc3545;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/loadDashboard.js"></script>
+    <script src= "../js/login.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Dashboard -->
+        <div id="dashboardContainer"></div>
+
+        <div class ="container-body">
+            <h1> Great poll</h1>
+
+            <form id="research">
+                <ol>
+                    <li>Is it necessary to you?</li>
+                    <input type="radio" id="yes" value="yes" name="question1">
+                    <label for="yes"> Yes</label> <br>     
+                    <input type="radio" id="no" value ="no" name="question1">
+                    <label for="no"> No</label>
+
+                    <li> Often pass polls? </li>
+                    <input type="radio" id="onceAMonth" value="onceAMonth" name="question2">
+                    <label for="onceAMonth"> Once a month</label> <br>
+                    <input type="radio" id="onceAWeek" value ="onceAWeek" name="question2">
+                    <label for="onceAWeek"> Once a week</label>
+
+                    <li> How old are you? </li>
+                    <input type="radio" id="age18" value="18-20" name="question3">
+                    <label for="age18"> 18-20</label> <br>
+
+                    <input type="radio" id="age21" value ="21-23" name="question3">
+                    <label for="age21"> 21-23</label>  
+                </ol>
+              
+                
+                <div class="researchButton">
+                    <button type="submit"> Retain</button>
+                </div>
+                
+            </form>            
+        </div>
+    </div>
+
+    <div id="loginModalContainer"></div>
+   
+</body>
+</html>

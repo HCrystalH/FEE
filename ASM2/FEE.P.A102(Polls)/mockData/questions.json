@@ -1,0 +1,22 @@
+[
+    {
+        "id": 96,
+        "title": "Great poll",
+        "status": "active"
+    },
+    {
+        "id": 97,
+        "title": "Favorite Programming Language",
+        "status": "active"
+    },
+    {
+        "id": 98,
+        "title": "Best Front-End Framework",
+        "status": "draft"
+    },
+    {
+        "id": 99,
+        "title": "University Student Survey",
+        "status": "closed"
+    }
+]

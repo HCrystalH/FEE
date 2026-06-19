@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="auth-page">
+    <div class="card register-card">
+        
+        <div class ="card-header"> Register </div>
+
+        <div class="card-body">
+            <form method="GET" id="registerForm" >
+                <div>
+                    <input 
+                        type ="text" 
+                        class="form-control mb-3"
+                        name="userName" 
+                        minlength="3"
+                        maxlength="50" 
+                        placeholder="User Name" 
+                        required>
+                </div>
+                
+                <div>
+                    <input 
+                        type ="email" 
+                        class="form-control mb-3"
+                        name="email" 
+                        minlength="5"
+                        placeholder="E-mail" 
+                        required>
+                </div>
+                
+                <div>
+                    <input 
+                        type ="password"
+                        class="form-control mb-3" 
+                        name="password" 
+                        minlength="8" 
+                        maxlength="30" 
+                        placeholder="Password" 
+                        required>
+                </div>
+                   
+                <div>
+                    <input 
+                        type ="password"
+                        class="form-control mb-3" 
+                        name="rePassword" 
+                        minlength="8" 
+                        maxlength="30" 
+                        placeholder="Re-Password" 
+                        required>
+                </div>
+            
+                <button class="btn btn-success" type="submit"> Register </button>
+            
+                <a href="login.html" class="register-link">Click here to Login</a>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../js/register.js"> </script>
+</body>
+
+</html>
