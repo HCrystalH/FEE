@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Order Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="../js/order.js" defer></script>
+    <!-- <script src="../js/orderJQuery.js" defer></script> -->
+
+</head>
+
+<body>
+    <div class="container">
+        <table class ="table table-bordered order-table">
+            <thead>
+                <tr>
+                    <th> Product </th>
+                    <th> Description </th>
+                    <th> Quantity/Update </th>
+                    <th> Price </th>
+                    <th> Discount </th>
+                    <th> Tax </th>
+                    <th> Total </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="product-row">
+                    <td class="product-img">
+                        <img src="../camera.png" alt="Camera">
+                    </td>
+
+                    <td class="product-description">
+                        MASSA AST <br>
+                        Color:black, Material: metal
+                    </td>
+
+                    <td class="quantity-group">
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="btn btn-sm btn-secondary btn-minus">-</button>
+                        <button class="btn btn-sm btn-secondary btn-plus">+</button>
+                        <button class="btn btn-sm btn-secondary btn-remove">X</button>
+                    </td>
+
+                    <td class="price" data-price="120.00">$120.00</td>
+                    <td class="discount" data-discount="25.00">$25.00</td>
+                    <td class="tax">$15.00</td>
+                    <td class="total">$110.00</td>
+                </tr>
+
+                <tr class="product-row">
+                    <td class="product-img">
+                        <img src="../memoryCard.png" alt="Memory Card">
+                    </td>
+
+                    <td class="product-description">
+                        MASSA AST <br>
+                        Color:black, Material: metal
+                    </td>
+
+                    <td class="quantity-group">
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="btn btn-sm btn-secondary btn-minus">-</button>
+                        <button class="btn btn-sm btn-secondary btn-plus">+</button>
+                        <button class="btn btn-sm btn-secondary btn-remove">X</button>
+                    </td>
+
+                    <td class="price" data-price="7.00">$7.00</td>
+                    <td class="discount" data-discount="0">--</td>
+                    <td class="tax">$1.00</td>
+                    <td class="total">$8.00</td>
+                </tr>
+                
+                <tr class="product-row">
+                    <td class="product-img">
+                        <img src="../tinyCamera.png" alt="Thin Camera">
+                    </td>
+
+                    <td class="product-description">
+                        MASSA AST <br>
+                        Color:black, Material: metal
+                    </td>
+
+                    <td class="quantity-group">
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="btn btn-sm btn-secondary btn-minus">-</button>
+                        <button class="btn btn-sm btn-secondary btn-plus">+</button>
+                        <button class="btn btn-sm btn-secondary btn-remove">X</button>
+                    </td>
+
+                    <td class="price" data-price="120.00">$120.00</td>
+                    <td class="discount" data-discount="25.00">$25.00</td>
+                    <td class="tax">$15.00</td>
+                    <td class="total">$110.00</td>
+                </tr>
+
+                    
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="summary">
+            <div class="summary-row">
+                <span class="summary-label">Total Price:</span>
+                <span class="summary-value" id="total-price">$228.00</span>
+            </div>
+
+            <div class="summary-row">
+                <span class="summary-label">Total Discount:</span>
+                <span class="summary-value" id="total-discount">$50.00</span>
+            </div>
+
+            <div class="summary-row">
+                <span class="summary-label">Total Tax:</span>
+                <span class="summary-value" id="total-tax">$31.00</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
